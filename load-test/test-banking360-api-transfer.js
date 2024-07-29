@@ -28,24 +28,6 @@ function generateTransferData() {
   };
 }
 
-{
-  "transaction_id": "550e8400-e29b-41d4-a716-446655440000",
-  "transaction_type": "transfer_intra",
-  "transaction_date": "2024-07-27T14:30:00Z",
-  "amount": 1000.00,
-  "currency": "THB",
-  "account_id": "a1b2c3d4-e5f6-4321-8765-abcdef123456",
-  "recipient_account_id": "98765432-dcba-4321-abcd-ef1234567890",
-  "source_institution": "BankA",
-  "destination_institution": "BankA",
-  "status": "completed",
-  "description": "Transfer from Mr. A to Mr. B",
-  "act_by": "11112222-3333-4444-5555-666677778888",
-  "act_at": "2024-07-27T14:30:05Z",
-  "created_at": "2024-07-27T14:30:00Z",
-  "created_by": "11112222-3333-4444-5555-666677778888",
-  "sign": 1
-}
 
 // Options for autocannon
 const opts = {
