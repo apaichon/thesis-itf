@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  corebankingapi:
+    image: corebankingapi
+    container_name: corebankingapi
+    build: ./src/CoreBanking.WebApi
+    ports:
+      - "5000:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development

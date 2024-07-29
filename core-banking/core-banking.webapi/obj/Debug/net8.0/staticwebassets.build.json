@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ccOAkqyhBQCtx57Ec5x7smODA8TYAZoNvymnHaRyHoI=",
+  "Source": "core-banking.webapi",
+  "BasePath": "_content/core-banking.webapi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

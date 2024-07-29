@@ -1,0 +1,12 @@
+/Users/apaichon/Projects/Mahidol/thesis/integration360/integration360/src/core-banking/core-banking.domain/bin/Debug/net7.0/core-banking.domain.deps.json
+/Users/apaichon/Projects/Mahidol/thesis/integration360/integration360/src/core-banking/core-banking.domain/bin/Debug/net7.0/core-banking.domain.dll
+/Users/apaichon/Projects/Mahidol/thesis/integration360/integration360/src/core-banking/core-banking.domain/bin/Debug/net7.0/core-banking.domain.pdb
+/Users/apaichon/Projects/Mahidol/thesis/integration360/integration360/src/core-banking/core-banking.domain/obj/Debug/net7.0/core-banking.domain.csproj.AssemblyReference.cache
+/Users/apaichon/Projects/Mahidol/thesis/integration360/integration360/src/core-banking/core-banking.domain/obj/Debug/net7.0/core-banking.domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/apaichon/Projects/Mahidol/thesis/integration360/integration360/src/core-banking/core-banking.domain/obj/Debug/net7.0/core-banking.domain.AssemblyInfoInputs.cache
+/Users/apaichon/Projects/Mahidol/thesis/integration360/integration360/src/core-banking/core-banking.domain/obj/Debug/net7.0/core-banking.domain.AssemblyInfo.cs
+/Users/apaichon/Projects/Mahidol/thesis/integration360/integration360/src/core-banking/core-banking.domain/obj/Debug/net7.0/core-banking.domain.csproj.CoreCompileInputs.cache
+/Users/apaichon/Projects/Mahidol/thesis/integration360/integration360/src/core-banking/core-banking.domain/obj/Debug/net7.0/core-banking.domain.dll
+/Users/apaichon/Projects/Mahidol/thesis/integration360/integration360/src/core-banking/core-banking.domain/obj/Debug/net7.0/refint/core-banking.domain.dll
+/Users/apaichon/Projects/Mahidol/thesis/integration360/integration360/src/core-banking/core-banking.domain/obj/Debug/net7.0/core-banking.domain.pdb
+/Users/apaichon/Projects/Mahidol/thesis/integration360/integration360/src/core-banking/core-banking.domain/obj/Debug/net7.0/ref/core-banking.domain.dll

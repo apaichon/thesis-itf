@@ -1,0 +1,37 @@
+{
+    "sqltools.connections": [
+        {
+            "mssqlOptions": {
+                "appName": "SQLTools",
+                "useUTC": true,
+                "encrypt": true
+            },
+            "previewLimit": 50,
+            "server": "superphone.cygwnsvppjxp.ap-southeast-1.rds.amazonaws.com",
+            "port": 1433,
+            "driver": "MSSQL",
+            "name": "MrFox-NFT-Production",
+            "database": "MrFoxNFT",
+            "username": "nftadmin",
+            "password": "MrFoxNFT@Market2022"
+        },
+        {
+            "server": "localhost",
+            "port": 8123,
+            "useHTTPS": false,
+            "database": "Customer360",
+            "username": "default",
+            "enableTls": false,
+            "previewLimit": 50,
+            "password": "P@ssw0rd",
+            "driver": "ClickHouse",
+            "name": "customer360"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:core-banking}/data/core-banking.db",
+            "name": "corebankdata"
+        }
+    ]
+}

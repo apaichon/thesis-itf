@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  memq:
+    build: ./pkg/memq
+    ports:
+      - "8081:8081"
+      - "8082:8082"
+      - "8083:8083"
+    environment:
+      - PORT_1=8081
+      - PORT_2=8082
+      - PORT_3=8083
+  orchestrator:
+    build: ./pkg/orchestrator
+  process:
+    build: ./pkg/process

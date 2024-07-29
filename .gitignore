@@ -128,3 +128,29 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# Compiled object files
+*.o
+# Compiled binary files
+*.bin
+# Compiled executable files
+*.exe
+# Compiled library files
+*.lib
+# Compiled shared libraries
+*.dll
+# Compiled archive files
+*.a
+
+# Test results
+/test/
+/testdata/
+
+# Output directories
+/dist/
+/build/
+
+# IDE-specific files
+.idea/
+*.iml

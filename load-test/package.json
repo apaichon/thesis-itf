@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@clickhouse/client": "^1.4.0",
+    "@faker-js/faker": "^8.4.1",
+    "autocannon": "^7.15.0",
+    "autocannon-reporter": "^1.1.0",
+    "csv-parser": "^3.0.0",
+    "uuid": "^10.0.0"
+  }
+}
