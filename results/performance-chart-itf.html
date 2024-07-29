@@ -1,0 +1,133 @@
+<!--
+	THIS EXAMPLE WAS DOWNLOADED FROM https://echarts.apache.org/examples/en/editor.html?c=line-stack&code=PYBwLglsB2AEC8sDeAoWtJgDYFMBcyKAkGDgB5gEDkAygJ4DOpAtrAAo4BOAZsJ8wENoAYxywAwsGYgBnCAxhUANMQYBXAEakK1SZzEAhIQGsI0AOawAbg1hHopi7ADMANgAMsAO4QwAC1gASQAVADFlYlxuSlgqUWhSTio0WABfFXQwYGAsSBACVBI5c3MuagEyeQiiCvk2YDNEgpSSOhB8WOFOYAYGZKJUlPSU3FLoABNmonGBMAECAG0qPUMTM3NlWJW7NacQ8KVY-0dLN3dNqmP1lw8gsIvtq6cAUU5uzj6AXRUiDWAwLLMAgARncQwysDIAEFKgwpmA2h04rMcOY-HRqjM5osqKClO4CRcAKzufGEw64glk84Ukmkgk02LA6nUi4AJhZDPZSjprIpzk55NiABZBedvsRoAJmEjgv8BFhYABVBhcPo_KUygAywGEsyg0GozAg43GuGqmpwAHEBPkXGD0MN0HQYfJFsRUOhWu1qFYFWocBEvZbqAARNScfUwWAACgYAEog7AiCAer4DdQomAkzVYVqBBocFhmugvbx-LMmrEkH6sAHUrA-i1BgMfp7kwifbFawGcyHYuHI5BozGAKSJiEptPDw2xYp-bOT2oMfOF4uEUvJ8uCAFlas9nCpUfJL1O5OCMgggnEQboCXoVVyHBw2ALD0tfvLPirBzrHOdpEsDMQNJyxeZX2BAA6dwOVgNloOZWAiWg2C2Xg9wBVgYESUg4EAA5DgATlcXDEOwqC2VFLC8IosjCOcSC2VcT4bzbD9pSRR5dksfZ_0RTNgJzMDFgIpDROBNlMKJejDgk9xXEOSTXEw5xJMQ5w8NcAB2Q4iTZeSWNbd9gw46gnlODw-K7KggOgECWhdWFAgmcgQVA2ZwIWKCYNkhDfJ8uCUMOBiMN06CqJI9wiUOPDoIUrD3GgolPkgwQQBjKwEAAPljTKAHosPoxjXFgAAqBL3HjSCslCCAyBwcYYzZeN41Y4zk0_cybk8XjJwAgS7JzRz5Gc8ZXKw9zsVfWCIuC0lYC02DgWFaLqNEyTVucPSUrSjLsty2ACr0-SyoqqqarqhqmpatqiHbIhPy438XjePh1RafrYgYPVdySSbPJSL0FlW9xvlfeK2WBMGFh0-1nGh0ThS06HCN0-GWnvZNfBwZgaARXAS1LIhhByPhqH0cYT2TM8iAYOhmD-LAaAgAAvDpQRvFIWNSABuIA
+	⚠ Please be aware that this chart is not an official demo of Apache ECharts but is made by user-generated code.
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+  
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.5.1/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-graph-modularity extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-graph-modularity@2/dist/echarts-graph-modularity.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.5.1/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  title: {
+	text: 'System Performance Comparison',
+	subtext: 'Core Banking vs Banking 360 with ITF',
+	left: 'center'
+  },
+  tooltip: {
+	trigger: 'axis',
+	axisPointer: {
+  	type: 'cross'
+	}
+  },
+  legend: {
+	data: ['Core Banking', 'Core Banking ITF', 'Banking 360', 'Banking 360 ITF', 'Core Banking Errors'],
+	bottom: 10
+  },
+  xAxis: {
+	type: 'category',
+	data: ['10,000', '50,000', '100,000', '500,000', '1,000,000', '2,000,000', '2,500,000', '3,000,000', '4,000,000'],
+	name: 'Total Users',
+	nameLocation: 'middle',
+	nameGap: 30
+  },
+  yAxis: [
+	{
+  	type: 'value',
+  	name: 'Duration (s)',
+  	position: 'left',
+  	axisLabel: {
+    	formatter: '{value} s'
+  	}
+	},
+	{
+  	type: 'value',
+  	name: 'Duration (%)',
+  	position: 'right',
+  	axisLabel: {
+    	formatter: '{value}%'
+  	},
+  	max: 100
+	}
+  ],
+  series: [
+	{
+  	name: 'Core Banking',
+  	type: 'line',
+  	data: [1.02, 2.01, 5.02, 22.03, 150.18, 96.11, 151.24, 181.21, 193.26]
+	},
+	{
+  	name: 'Core Banking ITF',
+  	type: 'line',
+  	data: [8, 58, 123, 593, 1206, 2363, 3231, 3867, 5206]
+	},
+	{
+  	name: 'Banking 360',
+  	type: 'line',
+  	yAxisIndex: 1,
+  	data: [1.02, 1.01, 1.02, 2.02, 3.03, 5.04, 6.05, 8.06, 10.05].map(v => (v / 193.26 * 100).toFixed(2))
+	},
+	{
+  	name: 'Banking 360 ITF',
+  	type: 'line',
+  	yAxisIndex: 1,
+  	data: [2, 4, 6, 30, 72, 145, 188, 235, 352].map(v => (v / 5206 * 100).toFixed(2))
+	},
+	{
+  	name: 'Core Banking Errors',
+  	type: 'scatter',
+  	data: [
+    	[5, 0], [6, 21], [7, 303], [8, 47], [9, 53]
+  	],
+  	itemStyle: {
+    	color: 'red'
+  	},
+  	symbolSize: 10
+	}
+  ]
+};
+
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
